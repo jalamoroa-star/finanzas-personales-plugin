@@ -1,12 +1,25 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "finanzas-personales",
-  "version": "1.0.0",
   "description": "Plugin de Claude Code para gestion de los 3 proyectos financieros personales",
+  "owner": {
+    "name": "Juan Alamo",
+    "email": "jalamoroa@gmail.com"
+  },
   "plugins": [
     {
       "name": "finanzas-personales",
       "description": "Gestiona Inversiones Juan, Cuentas Bancarias y Tesoreria desde Claude Code",
-      "path": "."
+      "author": {
+        "name": "Juan Alamo"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "git",
+        "url": "https://github.com/jalamoroa-star/finanzas-personales-plugin.git",
+        "ref": "main"
+      },
+      "homepage": "https://github.com/jalamoroa-star/finanzas-personales-plugin"
     }
   ]
 }
