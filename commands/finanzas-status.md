@@ -1,9 +1,7 @@
 ---
-name: finanzas-status
 description: Muestra el estado de los 3 proyectos financieros y un resumen rapido del patrimonio
 argument-hint: [detallado]
-allowed-tools: [mcp__estado-proyectos__check_proyectos_status, mcp__estado-proyectos__ij_portfolio_resumen, mcp__estado-proyectos__cb_saldos, mcp__estado-proyectos__te_depositos]
-version: 1.0.0
+allowed-tools: [Bash]
 ---
 
 # Comando: /finanzas-status

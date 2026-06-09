@@ -1,7 +1,5 @@
 ---
-name: portfolio-analyst
 description: Activa cuando el usuario pregunta sobre su portfolio, inversiones, posiciones, P&L, rentabilidad, activos, ETFs, acciones o mercados financieros. Tambien activa con menciones a Inversiones Juan, eToro, Trade Republic, Bitvavo, Revolut o Robinhood.
-version: 1.0.0
 ---
 
 # Portfolio Analyst Skill
