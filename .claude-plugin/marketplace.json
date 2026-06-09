@@ -15,8 +15,9 @@
       },
       "category": "productivity",
       "source": {
-        "source": "git",
+        "source": "git-subdir",
         "url": "https://github.com/jalamoroa-star/finanzas-personales-plugin.git",
+        "path": ".",
         "ref": "main"
       },
       "homepage": "https://github.com/jalamoroa-star/finanzas-personales-plugin"
