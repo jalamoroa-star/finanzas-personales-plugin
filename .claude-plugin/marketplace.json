@@ -1,0 +1,12 @@
+{
+  "name": "finanzas-personales",
+  "version": "1.0.0",
+  "description": "Plugin de Claude Code para gestion de los 3 proyectos financieros personales",
+  "plugins": [
+    {
+      "name": "finanzas-personales",
+      "description": "Gestiona Inversiones Juan, Cuentas Bancarias y Tesoreria desde Claude Code",
+      "path": "."
+    }
+  ]
+}
