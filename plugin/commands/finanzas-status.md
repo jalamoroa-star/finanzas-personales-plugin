@@ -14,7 +14,10 @@ Muestra en 30 segundos el estado completo de tus finanzas personales.
 1. Llama a check_proyectos_status para ver que backends estan activos
 2. Para cada backend activo, recoge el dato clave:
    - IJ activo: llama a ij_portfolio_resumen (valor total del portfolio)
-   - CB activo: llama a cb_saldos (saldo total en cuentas)
+   - CB: obtener saldos SIEMPRE via `curl -s http://localhost:8001/api/cuentas/saldos`
+     (NO usar el MCP sqlite-cuentas, apunta a un fichero invalido)
+     Si el curl falla (puerto cerrado), leer el ultimo snapshot de:
+     backend/data/processed/patrimonio_snapshots.json (campo "liquidez")
    - TE activo: llama a te_depositos (suma de depositos activos)
 3. Presenta un resumen en este formato exacto:
 
