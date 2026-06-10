@@ -25,6 +25,13 @@ Muestra en 30 segundos el estado completo de tus finanzas personales.
    - Saldo por cuenta bancaria
    - Depositos con TAE y vencimiento
 
+## Calculo del patrimonio total
+- El valor de CB es SOLO liquidez bancaria (NO incluir portfolio de IJ)
+- El valor de IJ es el portfolio de inversiones
+- El valor de TE es la suma de depositos contratados
+- TOTAL = CB (liquidez) + IJ (portfolio) + TE (depositos)
+- Nunca sumes el portfolio de IJ al total de CB para evitar doble contabilizacion
+
 ## Nota
 Si algun backend esta OFFLINE, mostrar el dato como N/D y recordar
 al usuario que puede arrancarlo con su .bat correspondiente.
