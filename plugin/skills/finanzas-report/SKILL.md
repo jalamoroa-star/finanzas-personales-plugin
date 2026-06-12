@@ -2,6 +2,8 @@
 description: Genera un informe consolidado del estado financiero personal completo
 argument-hint: [semanal|mensual|completo]
 allowed-tools: [mcp__estado-proyectos__check_proyectos_status, mcp__estado-proyectos__ij_portfolio_resumen, mcp__estado-proyectos__ij_portfolio_posiciones, mcp__estado-proyectos__cb_saldos, mcp__estado-proyectos__cb_proyecciones, mcp__estado-proyectos__te_depositos, mcp__estado-proyectos__te_ultima_recomendacion]
+references:
+  - plugin/references/perfil-financiero.md
 ---
 
 # Finanzas Report

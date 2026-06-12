@@ -1,5 +1,7 @@
 ---
 description: Activa cuando el usuario pregunta sobre depositos, cuentas remuneradas, cash, liquidez, Raisin, HelpMyCash, TAE, intereses, Tesoreria o cuando quiere optimizar donde tiene el dinero aparcado.
+references:
+  - plugin/references/perfil-financiero.md
 ---
 
 # Cash Optimizer Skill

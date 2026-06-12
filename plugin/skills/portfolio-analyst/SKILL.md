@@ -1,5 +1,7 @@
 ---
 description: Activa cuando el usuario pregunta sobre su portfolio, inversiones, posiciones, P&L, rentabilidad, activos, ETFs, acciones o mercados financieros. Tambien activa con menciones a Inversiones Juan, eToro, Trade Republic, Bitvavo, Revolut o Robinhood.
+references:
+  - plugin/references/perfil-financiero.md
 ---
 
 # Portfolio Analyst Skill
