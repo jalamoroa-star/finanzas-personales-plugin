@@ -42,6 +42,39 @@ Genera un informe financiero personal consolidado con datos en tiempo real de lo
 
 ### Proximas acciones sugeridas
 - Maximo 3 acciones concretas y accionables
+- Incluye sugerencias de agente especializado si se cumplen las condiciones del Agent Routing (ver seccion abajo)
+
+## Agent Routing
+
+Evalua estas condiciones con los datos ya recogidos. Si se cumple alguna, añade la sugerencia correspondiente al final de la seccion "Proximas acciones sugeridas", usando la sintaxis exacta indicada.
+
+### Condicion 1 — Exceso de liquidez
+
+Criterio: `liquidez_disponible > (umbral_minimo + 20.000 EUR)`, es decir, liquidez disponible superior a **32.000 EUR** (12.000 EUR de umbral + 20.000 EUR de exceso).
+
+- `liquidez_disponible` = suma de saldos en cuentas corrientes y cuentas remuneradas de acceso inmediato de CB (excluye depositos a plazo)
+- Si se cumple → añadir en Proximas acciones:
+
+> 💡 Tienes liquidez por encima del nivel optimo. Para analizar opciones de depositos y maximizar la rentabilidad del exceso, invoca:
+> `@cash-optimizer analiza opciones de deposito para [importe_exceso] EUR`
+> (donde `importe_exceso = liquidez_disponible - 32.000`)
+
+### Condicion 2 — Posicion con perdida relevante en portfolio
+
+Criterio: alguna posicion individual del portfolio tiene P&L porcentual < -10%.
+
+- Usar los datos de posiciones de IJ (`pl_percentage` o campo equivalente por posicion)
+- Si hay una o mas posiciones que cumplen → añadir en Proximas acciones (lista las posiciones afectadas):
+
+> 💡 [N] posicion(es) con perdidas superiores al 10%: [lista de tickers y P&L%]. Para un analisis de rebalanceo, invoca:
+> `@portfolio-analyst analiza rebalanceo, posiciones con perdida > 10%`
+
+### Reglas de aplicacion
+
+- Las sugerencias de agente se añaden al final de "Proximas acciones", despues de las acciones propias del informe.
+- Si ambas condiciones se cumplen, incluye ambas sugerencias.
+- Si ninguna se cumple, no menciones esta logica en el informe.
+- El texto de la sugerencia debe aparecer exactamente como se indica arriba (incluyendo el bloque de codigo con la sintaxis de invocacion).
 
 ## Validation Loop
 
