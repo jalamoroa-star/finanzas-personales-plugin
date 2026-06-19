@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "C:\\\\Users\\\\jalam\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\Scripts\\\\mcp-server-fetch.exe"
+    }
+  }
+}
